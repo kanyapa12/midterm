@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Define your API endpoints
 app.get('/ahhhha', (req, res) => {
-  pool.query('SELECT * FROM menu', (error, results) => {
+  pool.query('SELECT * FROM Menu', (error, results) => {
     if (error) {
       console.error(error);
       res.status(500).send('Internal Server Error');
